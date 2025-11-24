@@ -1,0 +1,4 @@
+* { box-sizing: border-box }
+html, body { height: 100%; margin: 0 }
+body { display: grid; place-items: center; font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans"; background: #f6f7f9; color: #111 }
+.container { font-size: 48px; font-weight: 700; letter-spacing: .5px }
