@@ -19,3 +19,30 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue"
 .nav a:hover { color: #fff }
 .nav .chev { color: #8e8e8e }
 .page-main { min-height: calc(100vh - 100px); background: #fff }
+
+:root { --header-h: 100px }
+.hero { height: calc(100vh - var(--header-h)); position: relative; background: #0b0b0b }
+.slider { height: 100%; position: relative }
+.slider input { display: none }
+.slides { height: 100%; white-space: nowrap; transition: transform .6s ease }
+#s1:checked ~ .slides { transform: translateX(0%) }
+#s2:checked ~ .slides { transform: translateX(-100%) }
+#s3:checked ~ .slides { transform: translateX(-200%) }
+.slide { display: inline-block; width: 100%; height: 100%; position: relative; background-size: cover; background-position: center }
+.slide-1 { background: linear-gradient(135deg, #0b0b0b 0%, #1a1a1a 100%) }
+.slide-2 { background: linear-gradient(135deg, #0b0b0b 0%, #1f1a1a 100%) }
+.slide-3 { background: linear-gradient(135deg, #0b0b0b 0%, #1a1f1f 100%) }
+.hero-content { display: grid; gap: 16px; color: #fff; align-content: center; height: 100% }
+.hero-content h1 { font-size: 44px; margin: 0 }
+.hero-content p { color: #d1d1d1; margin: 0 }
+.btn { display: inline-block; background: #fff; color: #0b0b0b; padding: 10px 16px; border-radius: 6px; text-decoration: none; font-weight: 700 }
+.controls { position: absolute; bottom: 24px; left: 50%; transform: translateX(-50%); display: flex; gap: 10px }
+.controls label { width: 10px; height: 10px; border-radius: 50%; background: #6a6a6a; cursor: pointer }
+#s1:checked ~ .controls label[for="s1"], #s2:checked ~ .controls label[for="s2"], #s3:checked ~ .controls label[for="s3"] { background: #fff }
+
+.page-title { font-size: 28px; font-weight: 700; color: #111 }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px }
+.card { border: 1px solid #e5e7eb; border-radius: 10px; padding: 16px; background: #fff; color: #111; display: grid; gap: 8px }
+.card .title { font-weight: 700 }
+.card .meta { color: #666; font-size: 14px }
+.card .link { text-decoration: none; color: #0b0b0b; font-weight: 700 }
