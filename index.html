@@ -11,17 +11,41 @@
 <div class="header-top">
 <div class="container">
 <div class="brand">TECRELAX</div>
-<div class="search">
+<form class="search" action="products.html">
 <span class="icon">🔍</span>
-<input type="text" placeholder="Ara">
-</div>
+<input type="text" placeholder="Ara (önerilerden seç)" list="programs">
+<datalist id="programs">
+<option value="#3d-max">3ds Max</option>
+<option value="#after-effects">After Effects</option>
+<option value="#alphacam">Alphacam</option>
+<option value="#archicad">Archicad</option>
+<option value="#autocad">AutoCAD</option>
+<option value="#corona">Corona</option>
+<option value="#enscape">Enscape</option>
+<option value="#edgecam">Edgecam</option>
+<option value="#illustrator">Illustrator</option>
+<option value="#indesign">InDesign</option>
+<option value="#lightroom-classic">Lightroom Classic</option>
+<option value="#lumion">Lumion</option>
+<option value="#office">Office</option>
+<option value="#photoshop">Photoshop</option>
+<option value="#premiere-pro">Premiere Pro</option>
+<option value="#revit">Revit</option>
+<option value="#rhino">Rhino</option>
+<option value="#sketchup-pro">SketchUp Pro</option>
+<option value="#sketchup-vray">SketchUp V‑Ray</option>
+<option value="#solidworks">SolidWorks</option>
+<option value="#transmutr">Transmutr</option>
+<option value="#vray">V‑Ray</option>
+</datalist>
+</form>
 <div class="actions"><span class="lang">TR</span><span class="sep">|</span><a class="signin" href="#">Oturum Aç</a></div>
 </div>
 </div>
 <div class="header-nav">
 <div class="container">
 <nav class="nav">
-<a href="#">Ürünler <span class="chev">▾</span></a>
+<a href="products.html">Ürünler <span class="chev">▾</span></a>
 <a href="#">Destek <span class="chev">▾</span></a>
 <a href="#">Öğrenme <span class="chev">▾</span></a>
 <a href="#">Topluluk <span class="chev">▾</span></a>
@@ -32,31 +56,39 @@
 <main class="page-main">
 <section class="hero">
 <div class="slider">
-<input type="radio" name="slide" id="s1" checked>
+<input type="radio" name="slide" id="s1">
 <input type="radio" name="slide" id="s2">
 <input type="radio" name="slide" id="s3">
 <div class="slides">
 <div class="slide slide-1">
 <div class="hero-content container">
-<h1>Program Kurulumu ve Sürüm Listeleri</h1>
-<p>Basit, hızlı, kategorilere ayrılmış görüntüleme.</p>
-<a class="btn" href="categories.html">Kategorileri Gör</a>
+<h1>Geçici Başlık 1</h1>
+<p>Özet metin 1</p>
+<a class="btn" href="products.html">Kategorileri Gör</a>
 </div>
 </div>
 <div class="slide slide-2">
 <div class="hero-content container">
-<h1>Render Araçları</h1>
-<p>Chaos ekosistemi: V‑Ray, Corona, Enscape.</p>
-<a class="btn" href="category-chaos.html">Chaos Ürünleri</a>
+<h1>Geçici Başlık 2</h1>
+<p>Özet metin 2</p>
+<a class="btn" href="products.html#vray">Chaos Ürünleri</a>
 </div>
 </div>
 <div class="slide slide-3">
 <div class="hero-content container">
-<h1>Çizim ve Modelleme</h1>
-<p>Autodesk, SketchUp, SolidWorks ve daha fazlası.</p>
-<a class="btn" href="categories.html">Tüm Kategoriler</a>
+<h1>Geçici Başlık 3</h1>
+<p>Özet metin 3</p>
+<a class="btn" href="products.html">Tüm Kategoriler</a>
 </div>
 </div>
+</div>
+<div class="arrows">
+<label class="prev p1" for="s3"></label>
+<label class="next n1" for="s2"></label>
+<label class="prev p2" for="s1"></label>
+<label class="next n2" for="s3"></label>
+<label class="prev p3" for="s2"></label>
+<label class="next n3" for="s1"></label>
 </div>
 <div class="controls">
 <label for="s1"></label>
